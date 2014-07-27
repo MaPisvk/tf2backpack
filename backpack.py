@@ -6,9 +6,9 @@ import json
 
 parser = argparse.ArgumentParser(description='View tf2 backpack.')
 
-parser.add_argument("key")
-parser.add_argument("profile")
-parser.add_argument("-d", "--duplicates", help="Show only items of which is more than 1", action="store_true")
+parser.add_argument("key", help="Steam API key")
+parser.add_argument("profile", help="SteamID64" )
+parser.add_argument("-d", "--duplicates", help="Show only items when there is more than 1", action="store_true")
 parser.add_argument("--debug", action="store_true")
 
 args = parser.parse_args()
